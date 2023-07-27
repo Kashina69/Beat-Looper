@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: white;
+}
+body {
+  background-color: #434344;
+  overflow: hidden;
+}
+nav {
+  background-color: #28282b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.track {
+  width: 10vw;
+}
+@media only screen and (max-width: 600px) {
+  .track {
+    width: 23vw;
+  }
+}
+.trackLineOne {
+  display: flex;
+  gap: 7px;
+}
+.trackLineTwo {
+  display: flex;
+  margin-top: 7px;
+  gap: 7px;
+}
+.trackLineThree{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top:30px ;
+}
+.trackLineThree>.track{
+width: 7vw;
+}
+@media only screen and (max-width: 600px) {
+  .trackLineThree>.track {
+    width: 15vw;
+  }
+}
+.trackHolder {
+  padding: auto;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinning-photo {
+  animation: spin 5s linear infinite; /* 3s duration, linear timing function, and infinite repeat */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+img:hover{
+  cursor: pointer;
+}
